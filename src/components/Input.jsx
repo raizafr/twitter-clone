@@ -13,7 +13,7 @@ const Input = () => {
   };
 
   return (
-    <div className="md:px-3 mt-1 sm:flex border-b border-gray-600 hidden ">
+    <div className="md:px-3 lg:px-4 mt-1 sm:flex border-b border-gray-600 hidden pb-2">
       <div className="mt-2">
         <img
           src={ProfilePicture}

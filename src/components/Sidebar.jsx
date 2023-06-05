@@ -14,7 +14,7 @@ import { LuMoreHorizontal } from "react-icons/lu";
 
 const Sidebar = () => {
   return (
-    <div className="hidden sm:flex flex-col px-4 md:px-5 lg:px-14 b-slate-400 max-h-screen">
+    <div className="hidden sm:flex flex-col px-4 md:px-5 lg:px-14 b-slate-400 max-h-screen sticky top-0">
       <div
         className="w-fit hover:bg-zinc-900 p-4 rounded-full
       "
@@ -80,8 +80,8 @@ const Sidebar = () => {
               />
             </div>
             <div className="hidden lg:block">
-              <h3 className="font-semibold">Raiza fr</h3>
-              <p className="text-sm opacity-50">@FrRaiza33490</p>
+              <h3 className="font-semibold">user</h3>
+              <p className="text-sm opacity-50">@user123</p>
             </div>
           </div>
           <div className="mt-4 hidden lg:block">

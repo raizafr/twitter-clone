@@ -2,6 +2,7 @@ import "./App.css";
 import Feed from "./components/Feed";
 import Sidebar from "./components/Sidebar";
 import Widgets from "./components/Widgets";
+import Modal from "./components/modal";
 
 function App() {
   return (
@@ -10,8 +11,7 @@ function App() {
         <Sidebar />
         <Feed />
         <Widgets />
-
-        {/* modal */}
+        {/* <Modal /> */}
       </main>
     </>
   );

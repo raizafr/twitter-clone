@@ -1,6 +1,6 @@
 const Widgets = () => {
   return (
-    <div className="text-white lg:w-1/3 hidden lg:block px-8 pt-2 max-h-screen">
+    <div className="text-white lg:w-1/3 hidden lg:block px-8 pt-2 max-h-screen sticky top-0">
       <div>
         <input
           type="text"

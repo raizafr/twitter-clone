@@ -1,44 +1,54 @@
+import ProfilePicture from "../assets/profilePicture.jpg";
+import { LuMoreHorizontal } from "react-icons/lu";
+import { BsChat } from "react-icons/bs";
+import { FaRetweet } from "react-icons/fa";
+import { AiOutlineHeart } from "react-icons/ai";
+import { LuShare } from "react-icons/lu";
+import { BiBarChart } from "react-icons/bi";
 const Post = () => {
   return (
-    <div className="mx-3 mt-1">
+    <div className="px-2 md:px-3 lg:px-4  mt-3 border-b pb-2 border-gray-600">
       <div className="flex space-x-2">
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-14 h-14"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-            />
-          </svg>
+        <div className="w-[50px]">
+          <img src={ProfilePicture} alt="" className="rounded-full" />
         </div>
-        <div className="pt-1 flex justify-between w-full">
-          <h3 className="space-x-1">
-            <span className="font-bold">Hitam Putih</span>
-            <span className="opacity-25 text-sm">@hitamputih • 11h</span>
-          </h3>
+        <div>
+          <div className="flex justify-between w-full">
+            <h3 className="space-x-1">
+              <span className="font-bold">Hitam Putih</span>
+              <span className="opacity-25 text-sm">@hitamputih • 11h</span>
+            </h3>
+            <div>
+              <div className="rounded-full hover:bg-[#133045] w-8 h-8 flex justify-center items-center hover:group-[0>text-[#1D9BF0]]">
+                <LuMoreHorizontal className="scale-125 " />
+              </div>
+            </div>
+          </div>
           <div>
-            <div className="rounded-full hover:bg-[#014b7d]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6 hover:stroke-[#1D9BF0]"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-                />
-              </svg>
+            LinkedIn is an amazing platform to connect with people, land jobs
+            and get new opportunities.
+          </div>
+          <div className="lg:mt-4 md:mt-3 mt-2">
+            <div className="flex justify-between md:pr-20 pr-12">
+              <div className="flex space-x-1 opacity-50 font-thin">
+                <BsChat className="scale-95" />
+                <p className="-mt-1">123</p>
+              </div>
+              <div className="flex space-x-1 opacity-50 font-thin">
+                <FaRetweet className="scale-110" />
+                <p className="-mt-1">23</p>
+              </div>
+              <div className="flex space-x-1 opacity-50 font-thin">
+                <AiOutlineHeart className="scale-110" />
+                <p className="-mt-1">113</p>
+              </div>
+              <div className="flex space-x-1 opacity-50 font-thin">
+                <BiBarChart className="scale-110" />
+                <p className="-mt-1">123</p>
+              </div>
+              <div className="flex space-x-1 opacity-50 font-thin">
+                <LuShare className="scale-110" />
+              </div>
             </div>
           </div>
         </div>
